@@ -2,15 +2,16 @@
 #include <stdio.h>
 #include <math.h>
 
+#include "engine.h"
+
 int main ()
 {
-    double theta = 34.2;
-    double s = sin(theta);
-    double c = cos(theta);
+    Engine_Vector2 p1 = engine_create_vector2 (10, 2);
+    Engine_Vector2 p2;
 
-    double res = (s * s) + (c * c);
+    engine_copy_vector2 (&p1, &p2);
 
-    printf("The result is %f", res);
+    printf("P1: %s -- P2: %s", engine_vector_to_string(&p1), engine_vector_to_string(&p2));
 
     return 0;
 }
