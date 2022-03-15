@@ -1,10 +1,21 @@
-# c-console-game-engine
-This project goal is to create a console game engine.
+# Ava Morti Engine
+This project goal is to create a console game engine. The goals of this project is to learn C to a point where I can use it in [Ludum Dare 50](https://ldjam.com/) (LD50). Also to get better at programming both theory and practice. I am going to do this by building a simple game engine.
+
+# **TODO**
+- [ ] Add Math functions to the vectors (add, dot, cross, etc.)
+
+# Project Specifications
+- [ ] "Graphics" Solution: The engine should be able to render "pixels". A pixel in this context is just the character █. This solution should allow for coloring of the pixel.
+- [ ] 2D Physics Solution: The engine should implment a simple physics system.
+- [ ] Multitheading: The engine should support multithreading.
+
+# Compile Guide
+To compile the project use `gcc src/*.c -o engine -I include -Wall`. **TODO**: need to find a better build system so create different builds (i.e. debug, release etc.).
 
 # Style Guide
 This project style guide is based off this [website](https://www.cs.umd.edu/~nelson/classes/resources/cstyleguide/).
 
-- Variable, constant, function, etc. names should be descriptive and use (snake_case) [https://en.wikipedia.org/wiki/Snake_case]. Example use `void print_name (char* name)` instead of `void printName (char* name)`.
+- Variable, constant, function, etc. names should be descriptive and use [snake_case](https://en.wikipedia.org/wiki/Snake_case). Example use `void print_name (char* name)` instead of `void printName (char* name)`.
 - Indentation  should be 4 spaces.
 - If variables have the same type they should be declared on the same line.
 - (K&R style) [https://en.wikipedia.org/wiki/Indentation_style] should be used for indentation and bracing.
