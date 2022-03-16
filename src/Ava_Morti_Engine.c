@@ -5,66 +5,6 @@
 
 #include "Ava_Morti_Engine.h"
 
-Ava_Vector2f ava_create_new_vector2f (const double x, const double y) {
-    Ava_Vector2f res;
-
-    res.x = x;
-    res.y = y;
-
-    return res;
-}
-
-Ava_Vector2i ava_create_new_vector2i (const int x, const int y) {
-    Ava_Vector2i res;
-
-    res.x = x;
-    res.y = y;
-
-    return res;
-}
-
-Ava_Vector3f ava_create_new_vector3f (const double x, const double y, const double z) {
-    Ava_Vector3f res;
-
-    res.x = x;
-    res.y = y;
-    res.z = z;
-
-    return res;
-}
-
-Ava_Vector3i ava_create_new_vector3i (const int x, const int y, const int z) {
-    Ava_Vector3i res;
-
-    res.x = x;
-    res.y = y;
-    res.z = z;
-
-    return res;
-}
-
-void ava_copy_vector2f (const Ava_Vector2f* src, Ava_Vector2f* dest) {
-    dest->x = src->x;
-    dest->y = src->y;
-}
-
-void ava_copy_vector2i (const Ava_Vector2i* src, Ava_Vector2i* dest) {
-    dest->x = src->x;
-    dest->y = src->y;
-}
-
-void ava_copy_vector3f (const Ava_Vector3f* src, Ava_Vector3f* dest) {
-    dest->x = src->x;
-    dest->y = src->y;
-    dest->z = src->z;
-}
-
-void ava_copy_vector3i (const Ava_Vector3i* src, Ava_Vector3i* dest) {
-    dest->x = src->x;
-    dest->y = src->y;
-    dest->z = src->z;
-}
-
 Ava_Vector2i ava_convert_vector2f_to_vector2i (const Ava_Vector2f* src) {
     Ava_Vector2i res;
 
@@ -135,6 +75,11 @@ double ava_get_magnitude_vector3f (const Ava_Vector3f* src) {
 
 double ava_get_magnitude_vector3i (const Ava_Vector3i* src) {
     return sqrt ((src->x * src->x) + (src->y * src->y) + (src->z * src->z));
+}
+
+void add_vector2f (const Ava_Vector2f* a, const Ava_Vector2f* b, Ava_Vector2f* res) {
+    res->x = a->x + b->x;
+    res->y = a->y + b->y;
 }
 
 char* ava_vector2f_to_string (const Ava_Vector2f* src) {
