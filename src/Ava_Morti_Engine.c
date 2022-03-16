@@ -82,6 +82,21 @@ void add_vector2f (const Ava_Vector2f* a, const Ava_Vector2f* b, Ava_Vector2f* r
     res->y = a->y + b->y;
 }
 
+void scale_vector2f (const int scalar, const Ava_Vector2f* a, Ava_Vector2f* res) {
+    res->x = scalar * a->x;
+    res->y = scalar * a->y;
+}
+
+void add_vector2i (const Ava_Vector2i* a, const Ava_Vector2i* b, Ava_Vector2i* res) {
+    res->x = a->x + b->x;
+    res->y = a->y + b->y;
+}
+
+void scale_vector2i (const int scalar, const Ava_Vector2i* a, Ava_Vector2i* res) {
+    res->x = scalar * a->x;
+    res->y = scalar * a->y;
+}
+
 char* ava_vector2f_to_string (const Ava_Vector2f* src) {
     int len = 0;
 
