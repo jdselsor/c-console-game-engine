@@ -30,24 +30,6 @@ double ava_get_magnitude_vector2i (const Ava_Vector2i* src);
 double ava_get_magnitude_vector3f (const Ava_Vector3f* src);
 double ava_get_magnitude_vector3i (const Ava_Vector3i* src);
 
-void add_vector2f (const Ava_Vector2f* a, const Ava_Vector2f* b, Ava_Vector2f* res);
-void scale_vector2f (const double scalar, const Ava_Vector2f* a, Ava_Vector2f* res);
-
-void add_vector2i (const Ava_Vector2i* a, const Ava_Vector2i* b, Ava_Vector2i* res);
-void scale_vector2i (const int scalar, const Ava_Vector2i* a, Ava_Vector2i* res);
-
-void add_vector3f (const Ava_Vector3f* a, const Ava_Vector3f* b, Ava_Vector3f* res);
-void scale_vector3f (const double scalar, const Ava_Vector3f* a, Ava_Vector3f* res);
-
-void dot_vector2f (const Ava_Vector2f* a, const Ava_Vector2f* b, double* res);
-void dot_vector2i (const Ava_Vector2i* a, const Ava_Vector2i* b, int* res);
-
-void dot_vector3f (const Ava_Vector3f* a, const Ava_Vector3f* b, double* res);
-void dot_vector3i (const Ava_Vector3i* a, const Ava_Vector3i* b, int* res);
-
-void cross_vector3f (const Ava_Vector3f* a, const Ava_Vector3f* b, Ava_Vector3f* res);
-void cross_vector3i (const Ava_Vector3i* a, const Ava_Vector3i* b, Ava_Vector3i* res);
-
 char* ava_vector2f_to_string (const Ava_Vector2f* src);
 char* ava_vector2i_to_string (const Ava_Vector2i* src);
 char* ava_vector3f_to_string (const Ava_Vector3f* src);
