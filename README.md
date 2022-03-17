@@ -2,7 +2,33 @@
 This project goal is to create a console game engine. The goals of this project is to learn C to a point where I can use it in [Ludum Dare 50](https://ldjam.com/) (LD50). Also to get better at programming both theory and practice. I am going to do this by building a simple game engine.
 
 # **TODO**
-- [ ] Add Math functions to the vectors (add, dot, cross, etc.)
+- [ ] Vector Operaions
+  - [ ] Vector2f
+    - [x] Equality
+    - [x] Addition/Subtraction
+    - [x] Scalar
+    - [x] Dot
+    - [ ] Normalize
+  - [ ] Vector2i
+    - [x] Equality
+    - [ ] Addition/Subtraction
+    - [ ] Scalar
+    - [ ] Dot
+    - [ ] Normalize
+  - [ ] Vector3f
+    - [x] Equality
+    - [ ] Addition/Subtraction
+    - [ ] Scalar
+    - [ ] Dot
+    - [ ] Cross
+    - [ ] Normalize
+  - [ ] Vector3i
+    - [x] Equality
+    - [ ] Addition/Subtraction
+    - [ ] Scalar
+    - [ ] Dot
+    - [ ] Cross
+    - [ ] Normalize
 
 # Project Specifications
 - [ ] "Graphics" Solution: The engine should be able to render "pixels". A pixel in this context is just the character █. This solution should allow for coloring of the pixel.
@@ -18,7 +44,7 @@ This project style guide is based off this [website](https://www.cs.umd.edu/~nel
 - Variable, constant, function, etc. names should be descriptive and use [snake_case](https://en.wikipedia.org/wiki/Snake_case). Example use `void print_name (char* name)` instead of `void printName (char* name)`.
 - Indentation  should be 4 spaces.
 - If variables have the same type they should be declared on the same line.
-- (K&R style) [https://en.wikipedia.org/wiki/Indentation_style] should be used for indentation and bracing.
+- [K&R style](https://en.wikipedia.org/wiki/Indentation_style) should be used for indentation and bracing.
 - #defined constances must used upper snake case. Example `#define MAX_LEN 10`.
 - Code should be modular and simple to read.
 - Avoid single line conditional and loops.
